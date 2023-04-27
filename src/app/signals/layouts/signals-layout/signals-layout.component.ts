@@ -12,22 +12,14 @@ export class SignalsLayoutComponent {
       icon: 'pi pi-fw pi-file',
       items: [
         {
-          label: 'New',
+          label: 'Ejemplo #1',
           icon: 'pi pi-fw pi-plus',
-          items: [
-            {
-              label: 'Bookmark',
-              icon: 'pi pi-fw pi-bookmark'
-            },
-            {
-              label: 'Video',
-              icon: 'pi pi-fw pi-video'
-            }
-          ]
+          routerLink: 'example-1',
         },
         {
-          label: 'Delete',
-          icon: 'pi pi-fw pi-trash'
+          label: 'Ejemplo #1',
+          icon: 'pi pi-fw pi-trash',
+          routerLink: 'example-2',
         },
         {
           separator: true

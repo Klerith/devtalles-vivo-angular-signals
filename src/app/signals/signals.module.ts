@@ -6,6 +6,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { SignalsRoutingModule } from './signals-routing.module';
 import { SignalsLayoutComponent } from './layouts/signals-layout/signals-layout.component';
 import { Example1PageComponent } from './pages/example1-page/example1-page.component';
+import { Example2PageComponent } from './pages/example2-page/example2-page.component';
 
 
 
@@ -13,7 +14,8 @@ import { Example1PageComponent } from './pages/example1-page/example1-page.compo
 @NgModule({
   declarations: [
     SignalsLayoutComponent,
-    Example1PageComponent
+    Example1PageComponent,
+    Example2PageComponent
   ],
   imports: [
     CommonModule,
