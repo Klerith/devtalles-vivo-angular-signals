@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'signalsApp';
+
+  private readonly primengConfig = inject( PrimeNGConfig );
+
+    ngOnInit() {
+        this.primengConfig.ripple = true;
+    }
 }

@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+html {
+  background-color: rgb(243, 243, 243);
+}
+
+body {
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.main-container {
+  background-color: #F8F9FA;
+  border-radius: 5px;
+  border: 1px solid #DFE2E6;
+  margin-top: 10px;
+  padding: 1rem;
+}
