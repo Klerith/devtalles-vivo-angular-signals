@@ -1,0 +1,16 @@
+<p>effects works!!!!</p>
+
+<p>
+  Counter1: {{ counter1() }}
+  <br>
+  Counter2: {{ counter2() }}
+  <br>
+  Result: {{ result() }}
+</p>
+
+<p-button (onClick)="increaseCounter2()">
+  Counter2 + 1
+</p-button>
+
+<p-button class="ml-2" (onClick)="stopEffects()">Stop effects</p-button>
+<p-button class="ml-2" (onClick)="reviveEffect()">Revive</p-button>

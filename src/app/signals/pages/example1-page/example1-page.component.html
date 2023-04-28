@@ -1,1 +1,45 @@
-<p>example1-page works!</p>
+
+
+<div>
+
+  <h3> Básico</h3>
+  <h2>Counter: {{ counter() }} - es par: {{ isEven() }} </h2>
+
+  <p-button (onClick)="increaseCounter()" class="mr-2">+1</p-button>
+  <p-button (onClick)="counter.set(0)">Set 0</p-button>
+
+  <p-divider />
+
+  <h3>Comparaciones</h3>
+  <div class="flex flex-row">
+    <pre class="mr-2">{{ person1() | json }}</pre>
+    <pre class="mr-2">{{ person2() | json }}</pre>
+
+    <h3 class="mr-2">Son iguales: {{ person1() === person2() }}</h3>
+
+    <p-button (onClick)="setPersonValues()">Igualar valores</p-button>
+  </div>
+
+  <p-divider />
+
+  <h3>Efectos</h3>
+  <div class="flex flex-row align-items-center">
+
+    <signals-ticker
+      *ngIf="showTicker()"
+      [initialValue]="currentTicker()"
+      (tickerChanged)="onTickerChanged($event)"
+      class="mr-2"/>
+
+    <h3 class="mr-2">Desde el padre:  <strong>{{ currentTicker() }}</strong> </h3>
+
+    <p-button (onClick)="toogleTicker()">Toogle {{ showTicker() }}</p-button>
+  </div>
+
+  <p-divider />
+
+  <h3>Efectos 2</h3>
+  <signals-effects />
+
+
+</div>
